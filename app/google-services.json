@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "781714435541",
+    "project_id": "t1shop-30b11",
+    "storage_bucket": "t1shop-30b11.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:781714435541:android:008e0aaf72b4874cfca15c",
+        "android_client_info": {
+          "package_name": "com.example.t1shop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCej436zdebpyzWZhY16NS0iFXQJQsacVc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
