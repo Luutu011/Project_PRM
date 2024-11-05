@@ -1,7 +1,7 @@
 package com.example.t1shop.Adapter;
 
 import android.content.Context;
-import android.util.Log;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,10 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.resource.bitmap.CenterCrop;
-import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
+import com.example.t1shop.Activity.ListFoodsActivity;
 import com.example.t1shop.Domain.Category;
-import com.example.t1shop.Domain.Food;
 import com.example.t1shop.R;
 
 import java.util.ArrayList;
@@ -70,6 +68,13 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.viewHo
         Glide.with(context)
                 .load(drawableResourceId)
                 .into(holder.pic);
+
+        holder.itemView.setOnClickListener(view -> {
+            Intent intent = new Intent(context, ListFoodsActivity.class);
+            intent.putExtra("CategoryId", items.get(position).getId());
+            intent.putExtra("CategoryName",items.get(position).getName());
+            context.startActivity(intent);
+        });
     }
 
     // Method to load image from drawable resources

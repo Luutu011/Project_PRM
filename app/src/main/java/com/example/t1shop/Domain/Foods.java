@@ -1,6 +1,8 @@
 package com.example.t1shop.Domain;
 
-public class Food {
+import java.io.Serializable;
+
+public class Foods implements Serializable {
 
     private int CategoryId;
     private String Description;
@@ -16,10 +18,10 @@ public class Food {
     private String Title;
     private int numberInCart;
 
-    public Food() {
+    public Foods() {
     }
 
-    public Food(int categoryId, String description, boolean bestFood, int id, int locationId, double price, String imagePath, int priceId, double star, int timeId, int timeValue, String title, int numberInCart) {
+    public Foods(int categoryId, String description, boolean bestFood, int id, int locationId, double price, String imagePath, int priceId, double star, int timeId, int timeValue, String title, int numberInCart) {
         CategoryId = categoryId;
         Description = description;
         BestFood = bestFood;
