@@ -11,7 +11,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.example.t1shop.MainActivity;
+import com.example.t1shop.Activity.MainActivity;
 import com.example.t1shop.R;
 import com.example.t1shop.databinding.ActivityIntroBinding;
 
