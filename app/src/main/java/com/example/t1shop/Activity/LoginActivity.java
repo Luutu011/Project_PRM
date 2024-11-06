@@ -46,5 +46,7 @@ public class LoginActivity extends BaseActivity {
                 });
             }
         });
+        binding.signupBtn.setOnClickListener(view -> startActivity(new Intent(LoginActivity.this, SignupActivity.class)));
+
     }
 }

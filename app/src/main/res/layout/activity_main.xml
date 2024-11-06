@@ -51,8 +51,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/logout"
-                    tools:srcCompat="@drawable/logout" />
+                    app:srcCompat="@drawable/logout" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <LinearLayout
@@ -216,7 +215,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Today's best foods"
+                    android:text="Today's best seller"
                     android:textColor="@color/blue_grey"
                     android:textSize="22dp"
                     android:textStyle="bold"/>

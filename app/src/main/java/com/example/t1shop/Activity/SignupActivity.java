@@ -50,5 +50,11 @@ ActivitySignupBinding binding;
             }
         });
     });
+        binding.loginBtn.setOnClickListener(view -> {
+
+                startActivity(new Intent(SignupActivity.this, LoginActivity.class));
+
+
+        });
     }
 }
